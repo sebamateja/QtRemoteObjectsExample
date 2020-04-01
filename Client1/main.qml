@@ -8,6 +8,11 @@ Window {
     height: 480
     title: qsTr("Hello World")
 
+    Text {
+        text: "Current state: " + Controller.currentState
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+
     Column {
         anchors.fill: parent
 
@@ -20,8 +25,12 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     Controller.pushCurrentState(true)
-                    Controller.testFunction("dsds")
+                    Controller.testFunction("Test function: Client1")
                 }
+            }
+            Text {
+                text: "TRUE"
+                anchors.centerIn: parent
             }
         }
         Rectangle {
@@ -33,6 +42,10 @@ Window {
                 onClicked: {
                     Controller.pushCurrentState(false)
                 }
+            }
+            Text {
+                text: "FALSE"
+                anchors.centerIn: parent
             }
         }
     }
