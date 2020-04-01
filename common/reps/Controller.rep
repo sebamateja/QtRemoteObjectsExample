@@ -1,0 +1,6 @@
+class Controller
+{
+    PROP(bool currentState=false);
+
+    SLOT(void testFunction(QString string))
+}
