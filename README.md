@@ -1,1 +1,3 @@
 # QtRemoteObjectsExample
+
+![](Preview.gif)
